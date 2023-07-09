@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="cart.css">
+
+    <title>mycart</title>
+  </head>
+  <body class="bg-light">
+
+    <div class="container-fluid">
+       <div class="row">
+         <div class="col-md-10 col-11 mx-auto">
+           <div class="row mt-5 gx-3">
+             <!--left sidediv-->
+             <div class="col-md-12 col-lg-8 coll=-11 mx-auto main_cart mb-lg-0 mb-5 shadow">
+             <div class="card p-4" id="card">
+               <h2 class="py-4 font-weight-bold" id="Numofitem">Cart</h2>
+               <div class="row">
+                <!--cart images-->
+                 <div class="col-md-5 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_image ">
+                <img src="https://m.media-amazon.com/images/I/51-lcoIMqXL.jpg" class="img-fluid" alt="image"> 
+                 </div>
+
+                 <!--cart product details-->
+                 <div class="col-md-7 col-11 mx-auto px-4 mt-2">
+                  <div class="row">
+                   <!--product name-->
+                   <div class="col-6 card-tittle">
+                     <h1 class="mb-4 product_name">Alkaline water</h1>
+                     <p class="mb-2">Quantity - 1L</p>
+                     <p class="mb-2">pH Level - 9.5</p>
+                   </div>
+
+                   <!--quantity seter-->
+       <div class="col-6">
+      <ul class="pagination justify-content-end set_quantity">
+    <li class="page-item">
+      <button class="page-link" onclick="decreaseNumber('textbox','itemval')"> <i class="fas fa-minus-circle"></i></button>
+    </li>
+    <li class="page-item">
+      <input type="text" name="" class="page-link" value="0" id="textbox">
+    </li>
+    <li class="page-item">
+    <button class="page-link" onclick="increaseNumber('textbox','itemval')"> <i class="fas fa-plus-circle"></i></button>
+  </li>
+  </ul>
+                   </div>
+                  </div>
+                   <!--remove and price item-->
+                   <div class="row">
+                    <div class="col-8 d-flex justify-content-between remove_wish">
+                      <button class="pop" ><i class="fas fa-trash-alt"></i>REMOVE ITEM</button>
+                      <button class="pop"><i class="fas fa-heart"></i>ADD TO MY FAV</button>
+                    </div>
+                     <div class="col-4 d-flex justify-content-end price_money">
+                       <h3>₹ <span id="itemval">0.00</span></h3>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <hr />
+             <!--2nd item card-->
+              <div class="card p-4" id="card1">
+               <div class="row">
+                <!--cart images-->
+                 <div class="col-md-5 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_image ">
+                <img src="https://content.jdmagicbox.com/comp/gwalior/x7/9999px751.x751.170924134532.s1x7/catalogue/zoxhins-group-of-india-pvtltd-thatipur-gwalior-vegetable-merchants-0b0utijati.jpg" class="img-fluid" alt="image"> 
+                 </div>
+
+                 <!--cart product details-->
+                 <div class="col-md-7 col-11 mx-auto px-4 mt-2">
+                  <div class="row">
+                   <!--product name-->
+                   <div class="col-6 card-tittle">
+                     <h1 class="mb-4 product_name">Mineral water</h1>
+                     <p class="mb-2">Quantity - <span id="jj">20</span>L</p>
+                     <p class="mb-2">brand - **</p>
+                   </div>
+
+                   <!--quantity seter-->
+       <div class="col-6">
+      <ul class="pagination justify-content-end set_quantity">
+    <li class="page-item">
+      <button class="page-link" onclick="decreaseNumber('textbox1','itemval1')"> <i class="fas fa-minus-circle"></i></button>
+    </li>
+    <li class="page-item">
+      <input type="text" name="" class="page-link" value="0" id="textbox1">
+    </li>
+    <li class="page-item">
+    <button class="page-link" onclick="increaseNumber('textbox1','itemval1')"> <i class="fas fa-plus-circle"></i></button>
+  </li>
+  </ul>
+                   </div>
+                  </div>
+                   <!--remove and price item-->
+                   <div class="row">
+                    <div class="col-8 d-flex justify-content-between remove_wish">
+                      <button class="pop"><i class="fas fa-trash-alt"></i>REMOVE ITEM</button>
+                      <button class="pop"><i class="fas fa-heart"></i>ADD TO MY FAV</button>
+                    </div>
+                     <div class="col-4 d-flex justify-content-end price_money">
+                       <h3>₹<span id="itemval1">0.00</span></h3>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             </div>
+             <!--right side--> 
+             <div class="col-md-12 col-lg-4 col-11 mx-auto mt-lg-0 mt-md-5">
+               <div class="right_side p-3 shadow bg-white">
+                <h2 class="product_name mb-5">Total ammount</h2>
+                <div class="price_indiv d-flex justify-content-between">
+                  <p>Product ammount</p>
+                  <p>₹<span id="product_total_amt">0.00</span></p>
+                </div>
+                <div class="price_indiv d-flex justify-content-between">
+                  <p>Shipping charges</p>
+                  <p>₹<span id="ship_charges">50.00</span></p>
+                </div>
+                <hr />
+                <div class="total-amt d-flex justify-content-between font-weight-bold">
+                  <p>The total ammount of (including VAT)</p>
+                  <p>₹<span id="total_cart_amt">0.00</span></p>
+                </div>
+                <a href="pay.html">
+                <button class="btn btn-primary text-uppercase">Checkout</button></a>
+               </div>
+               <!--discount code part-->
+               <div class="discount_code mt-3 shadow">
+                 <div class="card">
+                   <div class="card-body">
+                  <a class="d-flex justify-content-between" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-control="#collapseExample">Add a discount code(optional)
+                    <span><i class="fas fa-chevron-down pt-1"></i></span>
+                  </a>
+
+                  <div class="collapse" id="collapseExample">
+                    <div class="mt-3">
+                      <input type="text" name="" id="discount_code1" class="form-control font-weight-bold" placeholder="Have refer code">
+                      <small id="error_trw" class="text-dark mt-3">code is PaAni HaI</small>
+                    </div>
+                    <button class="btn btn-primary btn-sm mt-3" onclick="discount_code()">Apply</button>
+                  </div>
+                </div>
+              </div>
+           </div>
+           <!--discont end here-->
+               <div class="mt-3 shadow p-3 bg-white">
+                <div class="pt-4">
+                  <h5 class="mb-4">Expected delivery date</h5>
+                  <pd>20.02.2022 - 25.02.2022</p>
+                </div>
+           <!--date_block_end_here-->
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>  
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   <!--custom js file-->
+    <script type="text/javascript">
+
+      var product_total_amt = document.getElementById('product_total_amt');
+      var total_cart_amt = document.getElementById('total_cart_amt');
+      var ship_charges = document.getElementById('ship-charges');
+
+
+
+
+      //for minus button
+     const decreaseNumber = (incdec,itemprice) => {
+      var itemval = document.getElementById(incdec);
+      var itemprice = document.getElementById(itemprice);
+     // console.log(itemval.value);
+     if (itemval.value <= 0) {
+      itemval.value = 0;
+      alert('Seems like you have not purchased anything :(');
+     }else{
+      itemval.value = parseInt(itemval.value) - 1;
+      itemval.style.background = '#fff';
+      itemval.style.color = '#000';
+      itemprice.innerHTML = parseInt(itemprice.innerHTML)-20
+      product_total_amt.innerHTML = parseInt(product_total_amt.innerHTML)-20
+     total_cart_amt.write = parseInt(product_total_amt.innerHTML)+50;
+     }
+     };
+      //for plus button
+     const increaseNumber = (incdec,itemprice) => {
+      var itemval = document.getElementById(incdec);
+      var itemprice = document.getElementById(itemprice);
+     // console.log(itemval.value);
+     if (itemval.value >= 100) {
+      itemval.value = 100;
+      alert('max only 100 items are allowed');
+      itemval.style.background = 'crimson';
+      itemval.style.color = 'white';
+     }else{
+      itemval.value = parseInt(itemval.value) + 1;
+      itemprice.innerHTML = parseInt(itemprice.innerHTML)+20;
+         product_total_amt.innerHTML = parseInt(product_total_amt.innerHTML)+20;
+       total_cart_amt.innerHTML = parseInt(product_total_amt.innerHTML)+50;
+     }
+     }
+    </script>
+  </body>
+</html>

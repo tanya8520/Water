@@ -1,0 +1,151 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins',sans-serif;
+}
+header{
+    background: linear-gradient(120deg,#2980b9, #8e44ad);
+	height:100vh;
+	background-size: cover;
+	background-position: center;
+}
+.bgcolor{
+	background: linear-gradient(120deg,#2980b9, #8e44ad);
+	background-size: cover;
+	background-position: center;
+}
+
+
+.title{
+	align-content: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.title h1{
+	align-content: center;
+    margin-left: 100px;
+	color: #fff;
+	font-size: 70px;
+}
+.title p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 5px;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+
+
+
+.ab{
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	padding-bottom: 3.5rem;
+	font-size: 4rem;
+}
+
+.ab span{
+	color:gold;
+	text-transform: uppercase;
+}
+
+.image img{
+	margin-left: 60px;
+	border-radius: 5vh;
+	border-style: unset;
+	float: left;
+}
+
+.para h3{
+	margin-left: 500px;
+	font-size: 40px;
+	font-family: 'Poppins',sans-serif;
+}
+
+.para p{
+	margin-left: 500px;
+	color: floralwhite;
+	font-size: 25px;
+	font-family: 'Poppins',sans-serif;
+	word-wrap: break-word;
+	margin-right: 25px;
+}
+
+.whole{
+	 background-color: transparent;
+            width: 1200px;
+            height: 600px;
+            margin: 7em auto;
+            border-radius: 1.5em;
+            box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 2);
+}
+
+
+
+.footer{
+        box-sizing: border-box;
+         background-color: black;
+         padding-top: 40px;
+         height: auto;
+         width: 100vw;
+}
+
+.footer-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+}
+
+.footer-content p{
+	align-content: center;
+	display: block;
+	color: white;
+}
+.social{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 0 3rem 0;
+}
+
+.social li{
+        margin: 0 10px;
+}
+
+.social a i{
+        font-size: 1.1rem;
+        border-radius: 500%;
+display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    background: #000;
+    margin-right: 5px;
+    color: #fff;
+}
+.social a i.fa-facebook {
+      background-color: #3B5998; }
+    .footer a i.fa-twitter {
+      background-color: #55ACEE; }
+    .footer a i.fa-google-plus {
+      background-color: #DD4B39; }
+    .footer a i.fa-linkedin {
+      background-color: #0976B4; }
+    .footer a i.fa-instagram {
+      background-color: #B7242A; }
+
+
+
+
